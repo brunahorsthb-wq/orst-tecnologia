@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    @apply font-sans text-gray-800 antialiased;
-  }
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans text-ink antialiased bg-white; }
+  h1, h2, h3, h4 { @apply font-serif; }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-orst-accent hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
+    @apply bg-warm text-navy font-sans font-semibold px-7 py-3.5 rounded-sm hover:bg-warm-dark transition-colors duration-200 inline-flex items-center gap-2 text-sm tracking-wide;
   }
-  .btn-secondary {
-    @apply border-2 border-white text-white hover:bg-white hover:text-orst-navy font-semibold px-6 py-3 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
+  .btn-navy {
+    @apply bg-navy text-white font-sans font-semibold px-7 py-3.5 rounded-sm hover:bg-navy2 transition-colors duration-200 inline-flex items-center gap-2 text-sm tracking-wide;
   }
   .btn-outline {
-    @apply border-2 border-orst-accent text-orst-accent hover:bg-orst-accent hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
+    @apply border border-warm text-warm font-sans font-semibold px-7 py-3.5 rounded-sm hover:bg-warm hover:text-navy transition-colors duration-200 inline-flex items-center gap-2 text-sm tracking-wide;
+  }
+  .btn-outline-white {
+    @apply border border-white/40 text-white font-sans font-semibold px-7 py-3.5 rounded-sm hover:bg-white/10 transition-colors duration-200 inline-flex items-center gap-2 text-sm tracking-wide;
+  }
+  .section-label {
+    @apply font-sans text-xs font-semibold tracking-[0.2em] uppercase text-warm;
   }
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-orst-navy;
+    @apply font-serif text-4xl md:text-5xl font-light text-navy leading-tight;
   }
-  .section-subtitle {
-    @apply text-lg text-orst-gray mt-4 max-w-2xl;
-  }
-  .card {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6;
+  .card-base {
+    @apply bg-white border border-cream rounded-sm p-8 hover:border-warm/50 hover:shadow-lg transition-all duration-300;
   }
 }

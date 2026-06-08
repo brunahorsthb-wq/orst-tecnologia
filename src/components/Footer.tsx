@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Linkedin, Mail } from 'lucide-react'
+import { Share2, Globe, Mail } from 'lucide-react'
 
 const col1 = [
   { label: 'ORST Hub', href: '/solucoes' },
@@ -37,10 +37,10 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-9 h-9 border border-white/20 flex items-center justify-center hover:border-warm hover:text-warm transition-colors rounded-sm">
-                <Instagram size={16} />
+                <Share2 size={16} />
               </a>
               <a href="#" className="w-9 h-9 border border-white/20 flex items-center justify-center hover:border-warm hover:text-warm transition-colors rounded-sm">
-                <Linkedin size={16} />
+                <Globe size={16} />
               </a>
               <a href="mailto:contato@orst.com.br" className="w-9 h-9 border border-white/20 flex items-center justify-center hover:border-warm hover:text-warm transition-colors rounded-sm">
                 <Mail size={16} />

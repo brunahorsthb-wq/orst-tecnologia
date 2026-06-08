@@ -1,5 +1,4 @@
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react'
-import SectionHeader from '../components/SectionHeader'
 
 const categories = ['Todos', 'Tecnologia', 'Gestão', 'Finanças', 'Produtividade', 'Agronegócio']
 
